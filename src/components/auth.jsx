@@ -5,9 +5,7 @@ const Auth = function() {
     
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    
-    
-
+  
     const logInUser = async function() {
         try {
             await createUserWithEmailAndPassword(auth, email, password);
@@ -17,7 +15,7 @@ const Auth = function() {
         }
         
     }
-
+    
     const logOutUser = async function() {
         try {
             await signOut(auth);
